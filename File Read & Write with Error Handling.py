@@ -14,11 +14,11 @@ try:
     with open(new_filename, "w") as outfile:
         outfile.write(modified_content)
 
-    print(f"✅ Success! The modified content has been saved in '{new_filename}'")
+    print(f"Success! The modified content has been saved in '{new_filename}'")
 
 except FileNotFoundError:
-    print("❌ Error: The file does not exist. Please check the filename and try again.")
+    print("Error: The file does not exist. Please check the filename and try again.")
 except PermissionError:
-    print("❌ Error: You don’t have permission to read this file.")
+    print("Error: You don’t have permission to read this file.")
 except Exception as e:
-    print(f"❌ An unexpected error occurred: {e}")
+    print(f"An unexpected error occurred: {e}")
